@@ -9,6 +9,8 @@ Adds the time to every message in a Claude Code conversation, so you can tell ho
 
 The turn's clock runs from the prompt that started it; messages you send mid-turn get their own time but don't restart it. The total is Claude Code's own measure of the turn.
 
+![A conversation in the Claude Desktop app with chat-timestamps: each message starts with the time it was sent, each reply ends with its time, and the middle question's last reply reads "turn done in 2m 18s"](example.png)
+
 ## Install
 
 See [Install](../../README.md#install) in the repository's README, which also has a prompt you can paste into Claude Code to have it install the mod for you.
