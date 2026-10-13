@@ -9,6 +9,10 @@ Adds the time to every message in a Claude Code conversation, so you can tell ho
 
 The turn's clock runs from the prompt that started it; messages you send mid-turn get their own time but don't restart it. The total is Claude Code's own measure of the turn.
 
+## Install
+
+See [Install](../../README.md#install) in the repository's README, which also has a prompt you can paste into Claude Code to have it install the mod for you.
+
 ## How it works
 
 The mod notes the time when you submit a message and when each message is stored in the conversation, then adds the label as the message is drawn. It changes only what you see: the stored conversation and what Claude reads stay as they were.
