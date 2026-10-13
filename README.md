@@ -1,4 +1,4 @@
-# claude-mods
+# palapa-claude-mods
 
 Mods for [Claude Code](https://code.claude.com/docs/en/plugins/mods/overview): small plugins that change how its interface looks and behaves. They work in the Claude Code CLI and in the Code tab of the Claude Desktop app (Claude Code 2.1.287 or later).
 
@@ -19,11 +19,11 @@ Installing for your user account makes a mod load everywhere you use Claude Code
 To see a mod without installing anything, clone the repository and start a terminal session with the mod loaded for that session only:
 
 ```bash
-git clone https://github.com/CaptainPalapa/claude-mods
+git clone https://github.com/CaptainPalapa/palapa-claude-mods
 ```
 
 ```bash
-claude --plugin-dir claude-mods/mods/chat-timestamps
+claude --plugin-dir palapa-claude-mods/mods/chat-timestamps
 ```
 
 Send a message or two to see it work. Nothing in your configuration changes, and the next plain `claude` starts without it. This works in a terminal only; the Desktop app has no way to pass the flag.
@@ -34,20 +34,20 @@ Paste this into a Claude Code session (terminal or the Desktop app's Code tab). 
 
 ```text
 Install the chat-timestamps mod from the plugin marketplace at
-https://github.com/CaptainPalapa/claude-mods for my user account.
+https://github.com/CaptainPalapa/palapa-claude-mods for my user account.
 
 1. Run `claude --version` and stop if it is older than 2.1.287.
 2. Check ~/.claude/settings.json: if "disableAllHooks" is true, mods cannot
    load. Tell me and stop rather than changing it.
-3. Run `claude plugin marketplace list`. If a marketplace named claude-mods
-   already exists, check its source is CaptainPalapa/claude-mods and use it;
-   otherwise add it with `claude plugin marketplace add CaptainPalapa/claude-mods`.
+3. Run `claude plugin marketplace list`. If a marketplace named palapa-claude-mods
+   already exists, check its source is CaptainPalapa/palapa-claude-mods and use it;
+   otherwise add it with `claude plugin marketplace add CaptainPalapa/palapa-claude-mods`.
    If that clone fails over SSH, use
-   https://github.com/CaptainPalapa/claude-mods.git instead.
+   https://github.com/CaptainPalapa/palapa-claude-mods.git instead.
 4. Before installing, clone the repo to a temporary folder, run
    `claude plugin validate <folder>/mods/chat-timestamps`, and show me the
    hooks and calls it lists. Wait for my OK.
-5. Run `claude plugin install chat-timestamps@claude-mods`, then
+5. Run `claude plugin install chat-timestamps@palapa-claude-mods`, then
    `claude plugin list` to confirm it is installed and enabled.
 6. Tell me how to load it in this session, then delete the temporary clone.
 ```
@@ -57,20 +57,20 @@ https://github.com/CaptainPalapa/claude-mods for my user account.
 From your shell:
 
 ```bash
-claude plugin marketplace add CaptainPalapa/claude-mods
+claude plugin marketplace add CaptainPalapa/palapa-claude-mods
 ```
 
 ```bash
-claude plugin install chat-timestamps@claude-mods
+claude plugin install chat-timestamps@palapa-claude-mods
 ```
 
 If the first command fails while cloning (it uses SSH when it can), give it the HTTPS address instead:
 
 ```bash
-claude plugin marketplace add https://github.com/CaptainPalapa/claude-mods.git
+claude plugin marketplace add https://github.com/CaptainPalapa/palapa-claude-mods.git
 ```
 
-In a terminal session you can also type `/plugin marketplace add CaptainPalapa/claude-mods` and `/plugin install chat-timestamps@claude-mods` at the prompt. The Desktop app's Code tab doesn't take `/plugin` commands, so install from your shell (or with the prompt above) when you use the Desktop app.
+In a terminal session you can also type `/plugin marketplace add CaptainPalapa/palapa-claude-mods` and `/plugin install chat-timestamps@palapa-claude-mods` at the prompt. The Desktop app's Code tab doesn't take `/plugin` commands, so install from your shell (or with the prompt above) when you use the Desktop app.
 
 ### Load it and check it works
 
@@ -81,19 +81,19 @@ In a terminal session you can also type `/plugin marketplace add CaptainPalapa/c
 ### Update, turn off, remove
 
 ```bash
-claude plugin marketplace update claude-mods
+claude plugin marketplace update palapa-claude-mods
 ```
 
 ```bash
-claude plugin update chat-timestamps@claude-mods
+claude plugin update chat-timestamps@palapa-claude-mods
 ```
 
 ```bash
-claude plugin disable chat-timestamps@claude-mods
+claude plugin disable chat-timestamps@palapa-claude-mods
 ```
 
 ```bash
-claude plugin uninstall chat-timestamps@claude-mods
+claude plugin uninstall chat-timestamps@palapa-claude-mods
 ```
 
 Type `/reload-plugins` in any open session afterwards, or start a new one.
@@ -103,11 +103,11 @@ Type `/reload-plugins` in any open session afterwards, or start a new one.
 A mod is code that runs inside Claude Code with your permissions: it can read and write your files, start programs and see your session. Read it first, or list what it hooks and calls without running it:
 
 ```bash
-git clone https://github.com/CaptainPalapa/claude-mods
+git clone https://github.com/CaptainPalapa/palapa-claude-mods
 ```
 
 ```bash
-claude plugin validate claude-mods/mods/chat-timestamps
+claude plugin validate palapa-claude-mods/mods/chat-timestamps
 ```
 
 Each mod's README says what it reads and calls.
