@@ -1,0 +1,14 @@
+{
+  "name": "claude-mods",
+  "description": "Mods for Claude Code: small changes to how its interface looks and behaves.",
+  "owner": {
+    "name": "CaptainPalapa"
+  },
+  "plugins": [
+    {
+      "name": "chat-timestamps",
+      "source": "./mods/chat-timestamps",
+      "description": "Timestamps on your messages and Claude's replies, with time into the turn and the turn's total."
+    }
+  ]
+}

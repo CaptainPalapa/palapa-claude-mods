@@ -1,0 +1,9 @@
+{
+  "name": "chat-timestamps",
+  "version": "0.1.0",
+  "description": "Stamps each prompt and reply with the time it landed, each reply with its gap and time into the turn, and the turn's last reply with the turn's total.",
+  "author": {
+    "name": "CaptainPalapa"
+  },
+  "types": "./types/index.d.ts"
+}

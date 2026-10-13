@@ -1,0 +1,5 @@
+# Written by Claude Code each time it loads a mod; it lists the MCP tools
+# connected on the machine that loaded it, so it never belongs in the repo.
+.claude-plugin/types/
+node_modules/
+.DS_Store
