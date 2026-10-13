@@ -14,6 +14,20 @@ You need Claude Code **2.1.287 or later** in a terminal (check with `claude --ve
 
 Installing for your user account makes a mod load everywhere you use Claude Code on that machine: the terminal and the Desktop app's Code tab alike.
 
+### Try it for one session first
+
+To see a mod without installing anything, clone the repository and start a terminal session with the mod loaded for that session only:
+
+```bash
+git clone https://github.com/CaptainPalapa/claude-mods
+```
+
+```bash
+claude --plugin-dir claude-mods/mods/chat-timestamps
+```
+
+Send a message or two to see it work. Nothing in your configuration changes, and the next plain `claude` starts without it. This works in a terminal only; the Desktop app has no way to pass the flag.
+
 ### Option 1: ask Claude to install it
 
 Paste this into a Claude Code session (terminal or the Desktop app's Code tab). It works whether you have never used mods or already have some installed:
