@@ -1,0 +1,9 @@
+{
+  "name": "context-meter",
+  "version": "0.3.0",
+  "description": "Shows how full the context window is in the prompt footer, colored green, yellow or red as it fills.",
+  "author": {
+    "name": "CaptainPalapa"
+  },
+  "types": "./types/index.d.ts"
+}

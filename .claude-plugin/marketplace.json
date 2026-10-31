@@ -9,6 +9,11 @@
       "name": "chat-timestamps",
       "source": "./mods/chat-timestamps",
       "description": "Timestamps on your messages and Claude's replies, with time into the turn and the turn's total."
+    },
+    {
+      "name": "context-meter",
+      "source": "./mods/context-meter",
+      "description": "How full the context window is, in the prompt footer beside the model name, colored green, yellow or red as it fills."
     }
   ]
 }

@@ -7,6 +7,7 @@ This repository is a plugin marketplace. Each mod lives in its own folder under 
 | Mod | What it does |
 | --- | --- |
 | [chat-timestamps](mods/chat-timestamps) | Timestamps on your messages and Claude's replies, how far into the turn each one came, and the turn's total on the last reply |
+| [context-meter](mods/context-meter) | How full the context window is, in the prompt footer beside the model name, colored green, yellow or red as it fills |
 
 ## Install
 
