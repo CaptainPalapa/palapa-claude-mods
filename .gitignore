@@ -3,3 +3,6 @@
 .claude-plugin/types/
 node_modules/
 .DS_Store
+
+# Claude Code saves approved commands here, including any password typed in them
+.claude/settings.local.json
